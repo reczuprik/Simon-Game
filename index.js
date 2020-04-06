@@ -14,7 +14,7 @@ function startGame() {
 }
 //add button listener
 $(".button").click(function(event) {
-  if ($(event.target).hasClass("button-" + order[upcomingItem])) {
+  if ($(event.target).hasClass("button-" + order[upcomingItem]) && level != 0) {
     upcomingItem++;
     if (upcomingItem === order.length) {
       addNew();
