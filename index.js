@@ -19,11 +19,10 @@ $(".button").click(function(event) {
     if (upcomingItem === order.length) {
       addNew();
     }
-  } else if ($(event.target).hasClass("button")) {
+  } else {
     $("h1").html("Game over. Press a key to Start");
     restart();
-  } else { //not a button pushed
-  };
+  }
 });
 
 
